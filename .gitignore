@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 build/
+.package-lock.json
 
 # Log files
 *.log
@@ -16,10 +17,6 @@ jspm_packages/
 
 # macOS system files
 .DS_Store
-
-# Compiled files
-*.js
-*.css
 
 # TypeScript files
 *.tsbuildinfo
