@@ -1,0 +1,53 @@
+# Node.js 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# 환경 변수 파일 (보안 강화)
+.env
+.env.local
+.env.development
+.env.production
+
+# MacOS 시스템 파일
+.DS_Store
+
+# VSCode 설정 파일
+.vscode/
+
+# JetBrains (WebStorm) 관련 설정 및 파일
+.idea/
+*.iml
+out/
+*.swp
+*.swo
+*.swn
+
+# GitHub Pages 배포 관련 (빌드 결과 제외)
+dist/
+build/
+out/
+
+# Tailwind JIT 캐시
+.tailwind/
+
+# WebStorm 추가 파일
+# WebStorm의 workspace 설정 (개인 설정 저장용, 공유 불필요)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries/
+.idea/jsLibraryMappings.xml
+.idea/webstorm.xml
+
+# WebStorm 내부 캐시 파일
+.idea/httpRequests/
+.idea/modules.xml
+
+# WebStorm에서 생성하는 IDE-specific output 디렉토리
+out/
+
+# WebStorm 코드 스타일 설정 파일 (프로젝트 내 공유 불필요)
+.idea/codeStyles/
