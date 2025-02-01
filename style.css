@@ -1,20 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
 
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.floating {
-  animation: float 2s ease-in-out infinite;
-}
+.font-pretendard { font-family: "Pretendard Variable", sans-serif; }
 
 @media (min-width: 1024px) {
   .container {
@@ -23,6 +9,19 @@
   }
 }
 
-.font-pretendard {
-  font-family: "Pretendard Variable", sans-serif;
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.floating { animation: float 2s ease-in-out infinite; }
+.animate-pulse { animation: pulse 1.5s infinite ease-in-out; }
+.translate-y-10 { transform: translateY(40px); }
+.translate-y-0 { transform: translateY(0); }
