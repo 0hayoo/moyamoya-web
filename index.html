@@ -1,40 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/icon/Logo.svg">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/icon/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>모야모야</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/script.js"></script>
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body class="bg-gray-100 flex justify-center items-center min-h-screen text-center px-4 font-pretendard select-none">
-    <div class="container flex flex-col items-center w-full max-w-xl bg-white shadow-md rounded-lg lg:rounded-none p-6">
-        <img src="./assets/icon/Logo.svg" alt="모야모야 아이콘" class="w-35 h-35 floating">
-        <div class="bg-pink-100 text-pink-500 font-bold text-[1.125rem] p-3 rounded-[20px] mt-4 relative">
-            모야모야를 <br> 더 빨리 써보고 싶다면~
-            <div class="absolute w-0 h-0 -top-3 right-4 rounded-[5px]
-                border-l-0
-                border-r-[40px] border-r-transparent
-                border-b-[45px] border-b-pink-100"></div>
-        </div>
-        <div class="mt-6 w-full">
-            <img src="./assets/image/fastWait.svg" alt="빨리 기다리기" class="rounded-md w-full">
-        </div>
-        <button class="mt-6 px-6 py-3 bg-pink-500 text-white rounded-full text-[1.125rem] font-semibold shadow-lg hover:bg-pink-600 transition duration-300 transform hover:scale-105 w-full max-w-sm"><a href="./search.html">빨리 기다리기!</a></button>
-        <h2 class="mt-8 text-[1.25rem] font-bold text-gray-800">제일 빨리 기다리고 있는 학교는?</h2>
-        <div id="school-list" class="mt-4 space-y-3 w-full max-w-md opacity-0 transition-opacity duration-500">
-            <div id="skeleton-loader" class="space-y-3">
-                <div class="animate-pulse bg-gray-300 h-14 w-full rounded-lg"></div>
-                <div class="animate-pulse bg-gray-300 h-14 w-full rounded-lg"></div>
-            </div>
-        </div>
-        
-    </div>
-</body>
-
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
